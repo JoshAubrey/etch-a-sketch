@@ -1,5 +1,5 @@
-let rows = 16
-let columns = 16
+let rows = 32
+let columns = 32
 const container = document.getElementById("container")
 
 function generateGrid () {
@@ -46,11 +46,12 @@ function applyColor (gridSquare) {
 
 function newGrid () {
     container.innerHTML = ''
-    let result = prompt("How many squares per side should the new grid be?", "16")
-    while (!typeof result == 'number') {
-        result = prompt("Please enter a number", "64")
+    let input = parseInt(prompt("How many squares per side should the new grid be?", "32"))
+    while (Number.isNaN(input)) {
+        console.log(typeof input)
+        input = prompt("Please enter a number", "32")
     }
-    rows = columns = result
+    rows = columns = input
     generateGrid()
 
 }
