@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/styles.css">
+        <title>Etch A Sketch</title>
     </head>
     
     <body>
-        <button id=newGrid>New Grid</button>
+        <div id="title">
+            <h1>Etch A Sketch</h1>
+            <small>with javascript!</small>
+        </div>
+
+        <div id="inputs">
+            <button id=newGrid>New Grid</button>
+            <input type="checkbox" id="rgbCheckbox" checked>
+            <label for ="rgbCheckbox">Fading RGB Colors</label>
+        </div>
 
         <div id="container"></div>
 
