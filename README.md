@@ -19,7 +19,7 @@ An etch-a-sketch using your mouse cursor with fading RGB support, and custom gri
 
 ```bash
 git clone https://github.com/JoshAubrey/etch-a-sketch.git
-cd drum-kit
+cd etch-a-sketch
 open index.html with browser of choice
 ```
 
